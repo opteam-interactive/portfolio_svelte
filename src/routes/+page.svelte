@@ -1,12 +1,10 @@
 <script lang="ts">
 	import Block from '$lib/components/Block.svelte';
 	import placeholder from '$lib/assets/placeholder.jpg';
-	import categories from '$lib/data/skills.ts';
+	import categories from '$lib/data/skills.js';
+	import contacts from '$lib/data/contacts.js';
+
 	import {
-		Mail,
-		Smartphone,
-		Github,
-		Linkedin,
 		GraduationCap,
 		BriefcaseBusiness,
 		Presentation,
@@ -14,39 +12,8 @@
 		BadgeCheck,
 		Languages,
 		Moon,
-		Palette,
-		Hexagon
+		Palette
 	} from '@lucide/svelte';
-
-	type Contact = {
-		text: string;
-		icon: any;
-		url: string;
-		color?: string;
-	};
-
-	const contacts: Contact[] = [
-		{
-			text: 'Email : loic.grancher@protonmail.com',
-			icon: Mail,
-			url: 'mailto:loic.grancher@protonmail.com'
-		},
-		{
-			text: 'Tel : +33679953643',
-			icon: Smartphone,
-			url: 'tel:+33679953643'
-		},
-		{
-			text: 'Linkedin : Loïc Grancher',
-			icon: Linkedin,
-			url: 'https://www.linkedin.com/in/loic-grancher-3b586310b'
-		},
-		{
-			text: 'Github : loic-grancher',
-			icon: Github,
-			url: 'https://github.com/loic-grancher'
-		}
-	];
 </script>
 
 <div class="grid grid-cols-2 h-full grow">
