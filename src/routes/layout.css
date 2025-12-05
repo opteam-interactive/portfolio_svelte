@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+    font-family: 'SpaceMono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/SpaceMono-Regular.ttf'); 
+ 
+}
+
+html {
+    font-family: SpaceMono;
+    @apply bg-slate-900 text-neutral-200
+}
+
+.debug{
+    @apply border-2 border-red-500
+}
+
+@theme{
+    --color-php: #777BB4
+    --color-react : #61DAFB
+    --color-laravel: #FF2D20
+    --color-nodejs: #5FA04E
+    --color-vue: #4FC08D
+    --color-postgre: #4169E1
+    --color-figma: #F24E1E
+    --color-wordpress: #21759B
+    --color-symfony: #000000
+    --color-tailwind: #06B6D4
+    --color-linux: #FCC624
+    --color-javascript: #F7DF1E
+    --color-typescript: #3178C6
+}
