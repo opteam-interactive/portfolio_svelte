@@ -106,7 +106,7 @@ const categories: Category[] = [
         ]
     },
     {
-        name: 'Autres outils',
+        name: 'Autres',
         icon: Languages,
         skills: [
             {
@@ -123,9 +123,15 @@ const categories: Category[] = [
                 name: 'Figma',
                 icon: Figma,
                 level: 80
+            },
+            {
+                name: 'Anglais C2',
+                icon: Figma,
+                level: 80
             }
         ]
-    }
+    },
+
 ];
 
 export default categories;
